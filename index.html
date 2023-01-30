@@ -31,12 +31,27 @@
             filter: sepia();
         }
         img.image2{
+            position: relative;
+            top: 50px;
             filter: blur(10px);
+            z-index: -10;
         }
         img.image3{
             /* filter: invert(100); */
             filter: grayscale(1);
 
+        }
+        #info{
+            width: 100%;
+            border: 1px solid ;
+            margin: 0%;
+            padding: 0;
+            height: 300px;
+            background: rgb(110, 14, 86);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(105,150,7,1) 66%, rgba(0,212,255,1) 100%);
+        }
+        #info p{
+            color: white;
         }
     </style>
 </head>
@@ -64,9 +79,10 @@
         class="image3"
         alt ="Yellow florida tree"/></a>
 </section>
-<section>
+<section id="info">
     <p>These are plants found in Florida.  Located in zone 1-2</p>
 </section>
-<footer>Copyright ©2023 Jiho Sohn</footer>
+<footer><small>Copyright <script> document.write(new Date().getFullYear())</script>  GG's site</small></footer>
+
 </body>
 </html>
